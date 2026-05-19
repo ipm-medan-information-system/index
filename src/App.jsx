@@ -8,7 +8,7 @@ import Spasial from './pages/Spasial';
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/"          element={<Cover />} />
@@ -17,6 +17,6 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/spasial"   element={<Spasial />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
